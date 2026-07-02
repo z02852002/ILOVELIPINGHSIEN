@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rafId) cancelAnimationFrame(rafId);
 
     title.innerHTML = "🎉 部署成功！本機端永久運行！ 🎉";
-    message.innerHTML = "妳點了願意就不能 Rollback 囉！現在，請轉頭看向那個正深情看著妳的工程師...（把戒指拿出來吧！💍）";
+    message.innerHTML = "妳點了願意就不能 Rollback 囉！現在，妳就是我的!";
 
     noBtn.style.display = 'none';
 
