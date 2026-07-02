@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. 「我願意」點擊成功彩蛋
     yesBtn.addEventListener('click', () => {
         title.innerHTML = "🎉 部署成功！本機端永久運行！ 🎉";
-        message.innerHTML = "妳點了願意就不能 Rollback 囉！<br><br>現在，請轉頭看向那個正深情看著妳的工程師...<br>（把戒指拿出來吧！💍）";
+        message.innerHTML = "妳點了願意就不能 Rollback 囉！<br><br>現在，請轉頭看向那個正深情看著妳的工程師...<br>";
         
         // 隱藏頑皮按鈕，放大願意按鈕並置中
         noBtn.style.display = 'none';
