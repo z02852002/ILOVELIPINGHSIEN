@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let targetY = 0;
   let rafId = null;
   let lastTrigger = 0;
-  const COOLDOWN = 200; // 毫秒，避免連續觸發造成速度亂跳
-  const STEP_SPEED = 6; // 每幀固定移動像素數，速度穩定不忽快忽慢
+  const COOLDOWN = 200;
+  const STEP_SPEED = 6;
 
   function getBounds() {
     const rect = container.getBoundingClientRect();
@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function clampToBounds(x, y) {
     const b = getBounds();
-    // 若容器太小導致 max < min，直接置中，避免按鈕跑出去或消失
     const safeMaxX = Math.max(b.minX, b.maxX);
     const safeMaxY = Math.max(b.minY, b.maxY);
     return {
@@ -79,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
       noBtn.style.top = `${currentY}px`;
       noBtn.style.position = 'fixed';
       noBtn.style.margin = '0';
-
       isFixed = true;
     }
 
@@ -124,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rafId) cancelAnimationFrame(rafId);
 
     title.innerHTML = "🎉 部署成功！本機端永久運行！ 🎉";
-    message.innerHTML = "妳點了願意就不能 Rollback 囉！現在，妳就是我的! 💖";
+    message.innerHTML = "妳點了願意就不能 Rollback 囉！現在，請轉頭看向那個正深情看著妳的工程師...（把戒指拿出來吧！💍）";
 
     noBtn.style.display = 'none';
 
