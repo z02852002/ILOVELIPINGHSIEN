@@ -19,7 +19,7 @@ body {
 /* 內容圖層卡片（毛玻璃效果） */
 .proposal-container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.88); 
+        background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 40px 30px 50px 30px; /* 增加底部留白 */
