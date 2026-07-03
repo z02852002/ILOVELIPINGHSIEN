@@ -39,12 +39,14 @@ body {
 
 h1 {
     color: #d94164;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
     font-size: 26px;
     margin-bottom: 20px;
 }
 
 p {
     color: #444444;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
